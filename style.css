@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Exo+2&display=swap');
+
+*{
+    background-color: #111111;
+    border: none;
+    font-family: 'Exo', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.line{
+    height: 3px;
+    background-color: #e2b378;
+}
+
+.nav-bar{
+    font-family: 'Exo 2', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #e2b378, #af8c62);
+    border-image-slice: 1;
+}
+
+ul{
+    list-style: none; 
+}
+
+.wrap-nav{
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 220px;
+    height: 35px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
+    height:60px;
+}
+.menu-btn{
+    color: #fff;
+    font-size:32px;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+}
+.menu-btn i{
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+} 
+
+a:hover{
+    color: #e2b378;
+}
+
+button{
+    height:30px;
+    width: 120px;
+    background-color: #e2b378;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+   color: #ffffff;
+}
+
+.home-wrap{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px;
+    /* background-color: #e2b378; */
+}
+
+img{
+    height: 70vh;
+}
+
+.home-text{
+    color: #ffffff;
+
+}
+
+.home-text h1{
+    font-size: 100px;
+    line-height: 120px;
+    margin: 0px;
+}
+
+.home-text h3{
+    margin: 0px;
+}
+
+.home-text p{
+    align-items: center;
+    margin-top: 45px;
+    width: 650px;
+}
+
+.social{
+    position: absolute;
+    z-index: 998;
+    right: 12px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 25px;
+}
+
+.social p{
+    background-color: transparent;
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-block: 0px;
+}
+
+.icon{
+    position: absolute;
+    background-color: transparent;
+    margin-top: 20px;
+    height: 150px;
+}
+
+.icon i{
+    background-color: transparent;
+}
+
+.icon a{
+    background-color: transparent;
+}
+
+div.vertical-line{
+    width: 1px; /* Line width */
+    background-color: #ffffff; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 0 25px;
+    align-items: center;
+    color: #ffffff;
+}
+.about h1{
+    margin: 10px 0;
+}
+.about p{
+    margin: 10px 0;
+}
+.aboutWrap{
+    height: 480px;
+    width: 350px;
+}
+
+.services{
+    padding: 25px;
+    color: #ffffff;
+}
+
+.services h1{
+text-align: center;
+}
+.headServs{
+    margin-bottom: 25px;
+}
+.servWrap{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+}
+
+.servCard{
+    align-items: center;
+    height: 380px;
+    width: 250px;
+    border: 1px solid #e2b378;
+}
+
+
+  /* footer section styling */
+    footer{
+        background: #111;
+        padding: 15px 23px;
+        color: #fff;
+        text-align: center;
+        border-top: 2px solid transparent;
+        border-image: linear-gradient(to right, #e2b378, #af8c62);
+        border-image-slice: 1;
+    }
+    footer span a{
+        color: #e2b378;
+        text-decoration: none;
+    }
+    footer span a:hover{
+        text-decoration: underline;
+    }
+    
+  @media (max-width: 980px) {
+    .home-wrap{
+        text-align: center;
+        margin-top: 80px;
+        flex-direction: column;
+        /* background-color: #e2b378; */
+    }
+    .home-text p{
+        align-items: center;
+        margin-top: 45px;
+        width: 650px;
+    }
+    .home-text h1{
+        font-size: 50px;
+    } 
+    
+    img{
+        height: 60vh;
+    }
+    .nav-bar{
+        padding: 25px 0;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+ 
+    .menu{
+        position: absolute;
+        left: -100%;
+        top: 95px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #111111;
+        border-bottom: 1px solid #e2b378;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        transition: 0.3s;
+        padding: 0;
+      }
+     .nav-item{
+        padding: 26px 0;
+        background: transparent;
+        border-bottom: 1px solid #e2b378;
+        width: 100%;
+      }
+
+     .menu.active{
+        left: 0;
+      }
+
+      button{
+        margin: 26px 0;
+      }
+  }
